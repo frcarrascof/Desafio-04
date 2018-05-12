@@ -9,6 +9,10 @@ body{
 	font-size:14px;
 }
 
+p{
+	line-height: 20px;
+}
+
 h1{
 	text-transform: uppercase;
 	font-size: 36px;
@@ -16,10 +20,12 @@ h1{
 
 h2{
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 16px;
+	line-height: 30px;
 }
 
-section{
+
+.container-1{
 	padding-top:60px;
 }
 
@@ -27,6 +33,7 @@ section{
 .container{
 	max-width:580px;
 	margin:0 auto;
+	text-align: center;
 }
 
 .container-large{
@@ -35,7 +42,7 @@ section{
 }
 
 .button{
-	background-color: blue;
+	background-color: #337ab7;
 	color:white;
 	border-radius: 5px;
 	padding: 12px;
@@ -46,40 +53,47 @@ section{
 }
 
 .button:hover{
-	background-color: pink;
+	background-color: #4590d0;
 }
 
 .button-green{
-	background-color: green;
+	background-color: #5cb85c;
 }
 
 .button-green:hover{
-	background-color: red;
+	background-color: #72d272;
 }
 /* Header */
 header{
 	color:white;
 	text-align: center;
-	background-color: black;
-	padding: 100px 0;
+	padding: 120px 0;
+	background-image: url(images/bg.jpeg);
+	background-size: 1280px 851px;
+}
+
+.container h1{
+	font-weight: 200;
+}
+.buttons,.buttons-header{
+	padding: 22px;
 }
 
 /* Navegacion */
 .logo{
 	float: left;
+	padding-top: 20px;
 }
 
 .logo img{
 	width: 125px;
 }
 
-nav{
-	background-color: blue;
-}
-
 nav ul{
 	list-style-type: none;
 	float: right;
+	padding-top: 10px;
+
 }
 
 nav ul li{
@@ -88,12 +102,76 @@ nav ul li{
 }
 
 nav li a{
-	color:white;
 	text-decoration: none;
+	color: #ffffff;
 	opacity: 0.5;
 	transition: opacity 0.3s;
 }
 
 nav li a:hover{
 	opacity:1;
+}
+
+/*Seccion 1*/
+.imgPersonas{
+	width: 60%;
+}
+
+/*Seccion 2*/
+.container-info{
+	width: 100%;
+	background-color: #fafafa;
+	padding: 60px;
+	border: 1px solid #e7e7e7;
+	box-sizing: border-box;
+}
+
+/*Seccion Contacto */
+.container-contacto{
+	padding: 60px;
+	text-align: left;
+}
+.contacto-derecha{
+	float: right;
+	width:60%;
+}
+.contacto-izq{
+	float: left;
+	width: 30%;
+	padding-right: 30px;
+}
+
+h3{
+	font-weight: 300;
+	padding-bottom: 10px;
+}
+
+.correo{
+	font-weight: 600;
+	color: #337ab7;
+	text-decoration: none;
+	padding-top: 20px;
+
+}
+
+input{
+	padding:8px;
+	border-radius: 5px;
+	box-shadow: none;
+	border:solid 1px #e3e3e3;
+	margin-right: 10px;
+	background-color: white;
+}
+
+/*Footer*/
+footer{
+	margin-top: 90px;
+	width: 100%;
+	padding:30px;
+	background-color: black;
+}
+.container-footer{
+	
+	color: white;
+	text-transform: uppercase;
 }
